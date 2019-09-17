@@ -75,27 +75,98 @@ h1 > span{
 /* Navigation Styles */
 
 /*step15*/ 
-#mainlinks{
+nav#mainlinks{
    padding-top: 5px;
    padding-bottom: 5px; 
 }
 
+/*step16*/
+/*makes it so when you click onx it turns white */
+nav#mainLinks a:visited, 
+nav#mainLinks a:link{
+   color: white;
+}
 
+/*step17*/
+/*when you hover over mainLinks the body around it turns gray*/
+nav#mainLinks a:hover,nav#mainLinks a:active{
+   color: white;
+   opacity: .8;
+   background-color: rgba(51, 51, 51, 0.5);
+}
 
 /* Outline Styles */
+/*step18*/
+nav#outline{
+   color: rgb(51, 51, 51);
+   font-size: .8em;
+}
 
+/*step19*/
+nav#outline h1{
+   text-align: center;
+}
 
+/*step20*/
+/*makes the list marks roman numeral*/
+nav#outline > ol{
+   line-height: 2em; 
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style: upper-roman;
+}
 
+/*step21*/
+nav#outline >ol ol{
+   list-style-type: upper-alpha;
+}
+
+/*step22*/
+nav#outline nav a:link, a:visited{
+   color: rgb(101, 101, 101);
+}
+
+/*step23*/
+/*it makes it have an underline and allows you to hover over it*/
+nav#outline a:hover, a:active{
+   color: rgb(97, 97, 211);
+   text-decoration: underline; 
+}
 
 /* Section Styles */
+/*step24*/
+section{
+   background-color: rgb(220, 220,220);
+}
 
-
-
+/*step25*/
+section > header > h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 /* Article Styles */
-
-
+/*step26*/
+article h2{
+   font-size: 1.4em;
+}
+ 
+/*step27*/
+article p:first-of-type::first-letter{
+   font-size: 2em;
+}
 
 
 /* Aside Styles */
+ /*step28*/
+ aside{
+    font-size: .9em;
+ }
 
+ /*step29*/
+ aside h1{
+    font-size: 1.4em;
+    text-align: center;
+ }
